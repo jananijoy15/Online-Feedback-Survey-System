@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f0fa;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header h1 span {
+    color: #a855f7;
+}
+
+header p {
+    margin-top: 8px;
+    color: #ccc;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: 25px auto;
+}
+
+/* Intro */
+.intro {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.intro h2 {
+    color: #7e22ce;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Form */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #9333ea;
+}
+
+/* Rating */
+.rating {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.rating label {
+    margin: 0;
+    padding: 10px;
+    background: #f5f3ff;
+    border-radius: 8px;
+    font-weight: normal;
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #7e22ce;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #581c87;
+}
+
+/* Message */
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Result */
+.result {
+    display: none;
+    background: white;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.result h2 {
+    color: #7e22ce;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #111;
+    color: #ccc;
+    padding: 18px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

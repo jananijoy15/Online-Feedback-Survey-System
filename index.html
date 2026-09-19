@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Feedback System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Feedback<span>Hub</span></h1>
+        <p>Online Feedback & Survey System</p>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>We Value Your Feedback 💜</h2>
+            <p>
+                Share your experience with us. Your feedback helps us
+                improve our services.
+            </p>
+        </section>
+
+        <form id="feedbackForm">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label>How would you rate our service?</label>
+
+            <div class="rating">
+                <label>
+                    <input type="radio" name="rating" value="Excellent">
+                    ⭐ Excellent
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="Good">
+                    👍 Good
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="Average">
+                    🙂 Average
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="Poor">
+                    😞 Poor
+                </label>
+            </div>
+
+            <label for="experience">
+                How was your overall experience?
+            </label>
+
+            <select id="experience">
+                <option value="">Select an option</option>
+                <option>Very Satisfied</option>
+                <option>Satisfied</option>
+                <option>Neutral</option>
+                <option>Not Satisfied</option>
+            </select>
+
+            <label for="feedback">Your Feedback</label>
+
+            <textarea
+                id="feedback"
+                rows="5"
+                placeholder="Write your feedback here..."
+            ></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+        <div id="message"></div>
+
+        <section id="result" class="result">
+            <h2>Thank You! 💜</h2>
+            <p id="resultText"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 FeedbackHub | Online Feedback System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
